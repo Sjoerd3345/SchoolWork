@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fullscreenButton = document.getElementById("fullscreen-button");
     const gameFrame = document.getElementById("game-frame");
+    const gameContainer = document.getElementById("game-container");
 
     fullscreenButton.addEventListener("click", function() {
         if (!document.fullscreenElement) {
-            if (gameFrame.requestFullscreen) {
-                gameFrame.requestFullscreen();
-            } else if (gameFrame.mozRequestFullScreen) { // Firefox
-                gameFrame.mozRequestFullScreen();
-            } else if (gameFrame.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-                gameFrame.webkitRequestFullscreen();
-            } else if (gameFrame.msRequestFullscreen) { // IE/Edge
-                gameFrame.msRequestFullscreen();
+            if (gameContainer.requestFullscreen) {
+                gameContainer.requestFullscreen();
+            } else if (gameContainer.mozRequestFullScreen) { // Firefox
+                gameContainer.mozRequestFullScreen();
+            } else if (gameContainer.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+                gameContainer.webkitRequestFullscreen();
+            } else if (gameContainer.msRequestFullscreen) { // IE/Edge
+                gameContainer.msRequestFullscreen();
             }
             fullscreenButton.textContent = "Verlaat volledig scherm";
         } else {
@@ -28,3 +29,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
