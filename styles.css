@@ -34,3 +34,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Other styles... */
+
+#fullscreen-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#fullscreen-button:hover {
+    background-color: #45a049;
+}
