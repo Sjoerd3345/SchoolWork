@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fullscreenButton = document.getElementById("fullscreen-button");
-    const gameFrame = document.getElementById("game-frame");
     const gameContainer = document.getElementById("game-container");
 
     fullscreenButton.addEventListener("click", function() {
